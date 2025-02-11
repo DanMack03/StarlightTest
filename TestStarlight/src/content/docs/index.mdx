@@ -1,42 +1,47 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Bienvenido a Starlight
 template: splash
-hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+
+sidebar:
+  label: Acerca de
 ---
 
+import { Header } from '@astrojs/starlight/components';
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
 
 <Tabs>
-  <TabItem label="Estrellas">Sirius, Vega, Betelgeuse</TabItem>
-  <TabItem label="Lunas">Io, Europa, Ganymede</TabItem>
-</Tabs>
 
-## Next steps
+  <TabItem label="Sobre esta página">
+  ¡Bienvenido! La función principal de esta página es la de recopilar todas las funciones de Starlight y ponerlas a prueba para poder aprender más sobre este framework de Astro.
+  </TabItem>
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+  <TabItem label="Funciones de Starlight">
+  ## Posibilidades de Starlight
+
+<CardGrid>
+	<Card title="Actualizar páginas" icon="pencil">
+		Edita `src/content/docs/index.mdx` para cambiar la página principal.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Añadir documentos" icon="add-document">
+		Añade todos los documentos de tipo .md o .mdx a `src/content/docs` para crear nuevas páginas
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Configura tu página" icon="setting">
+		Edita la `sidebar` y otras configuraciones en `astro.config.mjs`.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Infórmate más a fondo" icon="open-book">
+		Todo y más dentro de [los documentos de Starlight](https://starlight.astro.build/).
 	</Card>
 </CardGrid>
+
+
+<LinkCard
+  title="Dale aquí para comprobar todos los archivos"
+  href="/paginas/prueba1"
+/>
+  </TabItem>
+</Tabs>
+

@@ -6,7 +6,13 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
+			logo: {
+				src: './src/assets/logo-d.png',
+			},
 			title: 'Probando Starlight',
+			customCss: [
+            './src/styles/estilos.css',
+            ],
 			social: {
 				github: 'https://github.com/DanMack03/StarlightTest',
 			},
@@ -21,6 +27,10 @@ export default defineConfig({
 				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Páginas',
+					autogenerate: { directory: 'paginas' },
 				},
 			],
 		}),
