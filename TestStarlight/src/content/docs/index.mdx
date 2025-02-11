@@ -2,8 +2,10 @@
 title: Bienvenido a Starlight
 template: splash
 
-sidebar:
-  label: Acerca de
+banner:
+  content: |
+    Como en el HTML normal, también se pueden enlazar páginas en Starlight
+    <a href="/info">Checalo</a>
 ---
 
 import { Header } from '@astrojs/starlight/components';
@@ -12,6 +14,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 import { Icon } from '@astrojs/starlight/components';
 import { Aside } from '@astrojs/starlight/components';
 import { LinkCard } from '@astrojs/starlight/components';
+
 
 <Tabs>
 
